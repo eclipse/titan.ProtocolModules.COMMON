@@ -18,7 +18,7 @@
 ******************************************************************************/
 //
 //  File:               General_Types.ttcn
-//  Rev:                R9A
+//  Rev:                R9B
 //  Prodnr:             CNL 113 368
 //  Reference:
 
@@ -242,9 +242,9 @@ group SimpleNativeTypes {
   // Verdicttypes
   //****************************************************
   
-  type record of verdicttype Verdicttypes with { variant "" };
+  type record of verdicttype Verdicttypes;
   type Verdicttypes VerdicttypeList;
-  type set of verdicttype VerdicttypeSet with { variant "" };
+  type set of verdicttype VerdicttypeSet;
   
   //****************************************************
   // Anytypes
@@ -373,8 +373,8 @@ group CompositeTypes {
   type record of OCT6           OCT6List with { variant "" };
   type record of OCT7           OCT7List with { variant "" };
 
-  type record of Dummy_comptype ListOfDummy_comptype with { variant "" };
-  type record of Dummy_CT       ListOfDummy_CT with { variant "" };
+  type record of Dummy_comptype ListOfDummy_comptype;
+  type record of Dummy_CT       ListOfDummy_CT;
   type record of Protocols      ProtocolList with { variant "" };
 } // end group CompositeTypes
 
